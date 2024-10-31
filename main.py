@@ -35,4 +35,4 @@ app.include_router(calculator_router, prefix="/calculate", tags=["calculate"])
 
 
 if __name__ == "__main__":
-    uvicorn.run("main:app", host='localhost', port=int(PORT))
+    uvicorn.run("main:app", host='localhost', port=int(PORT), reload='DEV')
