@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 import os
 load_dotenv()
 
-PORT = os.getenv('PORT')
+PORT = os.getenv('PORT',4000)
 GEMINI_API_KEY = os.getenv("Gemini_api")
 
 @asynccontextmanager
